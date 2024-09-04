@@ -1,0 +1,341 @@
+    body {
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-around;
+    }
+    
+    nav .img img {
+        width: 46%;
+        margin-top: -18px;
+        margin-right: 89px;
+        background: transparent;
+    }
+    
+    nav .btn {
+        display: flex;
+        height: 40px;
+        width: 110px;
+        margin-top: 12px;
+    }
+    
+    .btn {
+        display: flex;
+        /* Use flexbox to align buttons */
+        justify-content: center;
+        /* Center buttons horizontally */
+        align-items: center;
+        gap: 2px;
+        margin-left: 20px;
+        justify-content: flex-end;
+    }
+    
+    .btn .eng {
+        /* margin-inline: 22px; */
+        background-color: black;
+        color: white;
+        font-size: 19px;
+        border: 2px solid white;
+        border-radius: 3px;
+        /* margin-left: 43px; */
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .btn .sign {
+        width: 90px;
+        height: 40px;
+        margin-inline: 22px;
+        background-color: rgb(224, 16, 16);
+        color: white;
+        font-size: 19px;
+        border: 2px solid white;
+        border-radius: 3px;
+        border: none;
+        /* margin-inline: 22px; */
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .btn .eng:hover {
+        background-color: transparent;
+    }
+    
+    .btn .sign:hover {
+        background-color: transparent;
+        border: 3px solid red;
+    }
+    
+    .main {
+        background: url(https://assets.nflxext.com/ffe/siteui/vlv3/e89c9679-2f5f-491d-924c-c58924a8ee4b/8ec27a1d-02ce-4489-b320-a95106906f5d/IN-en-20221121-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 790px;
+    }
+    
+    .main h1 {
+        font-size: 60px;
+    }
+    
+    .main h3 {
+        font-size: 40px;
+    }
+    
+    .main p {
+        font-size: 27px;
+    }
+    
+    .input {
+        display: flex;
+        justify-content: center
+    }
+    
+    .input input {
+        width: 400px;
+        height: 58px;
+        border: none;
+        font-size: 22px;
+        padding: 0px 10px;
+    }
+    
+    .input button {
+        width: 200px;
+        height: 60px;
+        background-color: rgb(225, 11, 11);
+        color: white;
+        font-size: 22px;
+        border: none;
+    }
+    
+    .first {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 66px;
+        border: 4px solid gray;
+        margin-top: 5px;
+    }
+    
+    .tv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 66px;
+        border: 4px solid gray;
+        margin-top: 5px;
+        flex-direction: column;
+        font-size: 30px;
+       
+    }
+    
+    .second {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 66px;
+        border: 4px solid gray;
+        margin-top: 10px;
+    }
+    
+    .second .pt2 {
+        width: 40%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .second .pt2 h1 {
+        font-size: 40px;
+    }
+    
+    .second .pt2 p {
+        font-size: 25px;
+    }
+    
+    .first img {
+        width: 40%;
+    }
+    
+    .first h1 {
+        font-size: 55px;
+    }
+    
+    .first p {
+        font-size: 27px;
+    
+    }
+    
+    .first img {
+        width: 44%;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .buttons h1 {
+        /* text-align: center; */
+        margin-top: 33px;
+        font-size: 44px;
+    }
+    
+    .buttons button {
+        width: 600px;
+        height: 60px;
+        background-color: gray;
+        color: white;
+        font-size: 26px;
+        /* margin-left: 26%; */
+        text-align: left;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* gap: 20px; */
+        /* Distribute space evenly between columns */
+        padding: 45px 0;
+        border-top: 4px solid gray;
+        border-bottom: 4px solid gray;
+        margin-top: 15px;
+        background-color: #141414;
+        /* Netflix-like dark background */
+        color: #999;
+        /* Light grey text color */
+        /* Ensure it wraps on smaller screens */
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        /* background-color: blue; */
+    }
+    
+    .list p {
+        /* margin: 8px 0; */
+        /* Spacing between each link */
+        font-size: 17px;
+        color: #999;
+        /* Light grey color for links */
+        cursor: pointer;
+    }
+    
+    .list p:hover {
+        text-decoration: underline;
+        /* Underline on hover, similar to Netflix */
+    }
+    
+    @media (max-width: 968px) {
+    
+        .first,
+        .second {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 0 15px;
+        }
+    
+        .first .text {
+            text-align: center;
+        }
+    
+        .second .pt2 {
+            width: auto;
+        }
+    
+        .second img {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 668px) {
+        .main {
+            padding: 0px 15px;
+        }
+    
+        .main h1{
+            font-size: 40px;
+        }
+    
+        .main h3{
+            font-size: 30px;
+        }
+        .buttons {
+            width: auto;
+        }
+    
+        .buttons h1 {
+            font-size: 35px;
+        }
+    
+        .buttons button {
+            width: 500px;
+        }
+    
+    
+        .footer {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .footer .list {
+            text-align: left;
+        }
+    }
+    
+    @media (max-width: 540px) {
+    
+        .main h1{
+            margin: 200px 0 0 0;
+        }
+        .main .btn {
+            display: none;
+        }
+    
+        nav .img img{
+            display: none;
+        }
+    
+        .main .input{
+            width: auto;
+        }
+    
+        .buttons h1 {
+            font-size: 30px;
+        }
+    
+        .buttons button {
+            width: 420px;
+        }
+    
+        /* .first .none {
+            padding: 0 15px;
+        } */
+    }
+    
+    @media (max-width: 480px) {
+        .buttons h1 {
+            font-size: 27px;
+        }
+    
+        .buttons button {
+            width: 370px;
+    }
+    }  
